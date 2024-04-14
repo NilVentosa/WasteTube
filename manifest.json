@@ -1,0 +1,14 @@
+{
+	"manifest_version": 3,
+	"name": "WasteTube",
+    "description": "This extension will make you write some text every time you load a youtube page, so you explicitly express your desire to waste your life watching youtube videos.",
+	"version": "1.0",
+	"permissions": ["activeTab", "scripting", "tabs"],
+	"host_permissions": [
+        "https://youtube.com/*",
+        "https://www.youtube.com/*"
+	],
+	"background": {
+	    "service_worker": "scripts/background.js"
+	}
+}
